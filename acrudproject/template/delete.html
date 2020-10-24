@@ -1,0 +1,12 @@
+
+{% extends 'base.html' %}
+{% block content %}
+<h1>enter new blog delete</h1>
+<form action=" " method="post">
+    {% csrf_token %}
+    <h3>!!! warning</h3>
+    <p>!!! conform to delete:{{batman.title}}</p>
+    <input type="submit" value="conform">
+
+</form>
+{% endblock content %}

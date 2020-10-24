@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% extends 'base.html' %}
+{% block content %}
+{% for c in object_list %}
+<div class="webapp">
+    <h3><a href="{%url 'detailview'c.pk%}">{{c.title}}</a> </h3>
+    <label>{{c.author}}</label>
+    <p>{{c.text}}</p>
+</div>
+{% endfor %}
+{% endblock content %}
+
+</body>
+</html>
